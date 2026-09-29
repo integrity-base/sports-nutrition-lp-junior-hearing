@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// ─── Local images ─────────────────────────────────────────────────────────────
+// ─── Local images ─────────────────────────────────────────────────────────
 import imgHero from "./imports/B1C4B53C-38A2-4EE1-8A09-5A40BA91BF8E_L0_001-2026_7_27_18_22_44.jpg";
 import imgCookingChoco from "./imports/4CE0B131-9D9A-4234-8D8E-F18824C97A5B_L0_001-2026_7_12_12_30_24.jpg";
 import imgCookingDough from "./imports/30313456-77BD-43C8-AFD4-3C57DD0B40A2_L0_001-2026_7_12_12_29_56.jpg";
@@ -17,17 +17,17 @@ import imgRolling from "./imports/DB14CF01-D593-4467-8D89-50E26701B553_L0_001-20
 import imgCharaPeek from "./imports/168985a1-c235-4d6e-a209-729d37468593.png";
 import imgCharaGuide from "./imports/d7250647-7dcf-4eae-812b-04625d09b74b.png";
 
-// ─── Brand constants ───────────────────────────────────────────────────────────
+// ─── Brand constants ───────────────────────────────────────────────────────
 const TURQUOISE = "#0BBDCC";
 const GOLD = "#C9972B";
 const LINE_GREEN = "#06C755";
 
-// ─── Unsplash photo helpers ────────────────────────────────────────────────────
+// ─── Unsplash photo helpers ────────────────────────────────────────────────
 const img = (id: string, w: number, h: number) =>
   `https://images.unsplash.com/${id}?w=${w}&h=${h}&fit=crop&auto=format`;
 
 
-// ─── LINE CTA button ──────────────────────────────────────────────────────────
+// ─── LINE CTA button ───────────────────────────────────────────────────────
 function LineButton({ label = "公式LINEで初回ヒアリングの日程を相談する", sub = "" }: { label?: string; sub?: string }) {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -47,12 +47,12 @@ function LineButton({ label = "公式LINEで初回ヒアリングの日程を相
 function LineIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-      <path d="M19.952 10.815C19.952 7.053 16.394 4 12 4C7.606 4 4.048 7.053 4.048 10.815C4.048 14.22 6.975 17.069 10.923 17.535C11.182 17.592 11.536 17.707 11.628 17.93C11.71 18.133 11.682 18.447 11.655 18.649L11.503 19.575C11.458 19.778 11.328 20.364 12 20.098C12.672 19.833 15.71 17.897 17.109 16.292C18.078 15.206 19.952 13.218 19.952 10.815ZM9.13 13.04H7.607C7.378 13.04 7.192 12.856 7.192 12.629V9.038C7.192 8.811 7.378 8.627 7.607 8.627C7.836 8.627 8.022 8.811 8.022 9.038V12.217H9.13C9.359 12.217 9.545 12.401 9.545 12.629C9.545 12.856 9.359 13.04 9.13 13.04ZM10.754 12.629C10.754 12.856 10.568 13.04 10.339 13.04C10.11 13.04 9.924 12.856 9.924 12.629V9.038C9.924 8.811 10.11 8.627 10.339 8.627C10.568 8.627 10.754 8.811 10.754 9.038V12.629ZM14.658 12.629C14.658 12.82 14.518 12.988 14.324 13.029C14.295 13.035 14.265 13.04 14.236 13.04C14.08 13.04 13.936 12.966 13.846 12.84L12.317 10.736V12.629C12.317 12.856 12.131 13.04 11.902 13.04C11.673 13.04 11.487 12.856 11.487 12.629V9.038C11.487 8.848 11.627 8.679 11.821 8.638C11.85 8.632 11.88 8.627 11.909 8.627C12.065 8.627 12.209 8.701 12.299 8.827L13.828 10.931V9.038C13.828 8.811 14.014 8.627 14.243 8.627C14.472 8.627 14.658 8.811 14.658 9.038V12.629ZM16.808 10.14C17.037 10.14 17.223 10.324 17.223 10.551C17.223 10.779 17.037 10.963 16.808 10.963H15.7V11.633H16.808C17.037 11.633 17.223 11.817 17.223 12.044C17.223 12.272 17.037 12.456 16.808 12.456H15.285C15.056 12.456 14.87 12.272 14.87 12.044V9.627C14.87 9.4 15.056 9.216 15.285 9.216H16.808C17.037 9.216 17.223 9.4 17.223 9.627C17.223 9.855 17.037 10.039 16.808 10.039H15.7V10.14H16.808Z" />
+      <path d="M19.952 10.815C19.952 7.053 16.394 4 12 4C7.606 4 4.048 7.053 4.048 10.815C4.048 14.22 6.975 17.069 10.923 17.535C11.182 17.592 11.536 17.707 11.628 17.93C11.71 18.133 11.682 18.447 11.62 18.574L11.297 23.99C11.206 25.427 12.698 26.252 13.85 25.467L20.644 20.878C21.44 20.34 22.033 19.506 22.033 18.586V10.815C22.032 7.052 18.475 4.001 13.088 4.001C7.7 4.001 4.149 7.056 4.149 10.82C4.149 14.618 7.771 17.719 13.161 17.719C14.132 17.719 15.09 17.572 16.025 17.281" fill="white" />
     </svg>
   );
 }
 
-// ─── Section label component ──────────────────────────────────────────────────
+// ─── Section label component ──────────────────────────────────────────────
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-2 mb-3">
@@ -62,7 +62,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
   );
 }
 
-// ─── Main LP component ────────────────────────────────────────────────────────
+// ─── Main LP component ───────────────────────────────────────────────────────
 export default function App() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -114,7 +114,7 @@ export default function App() {
             />
             {/* Info chips overlay */}
             <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
-              {[["初回スポーツ栄養ヒアリング", true], ["60〜90分", false], ["4,400円（税込）", false]].map(([label, isPrimary], i) => (
+              {[["初回スポーツ栄養ヒアリング", true], ["60〜90分", false], ["8,800円（税込）", false]].map(([label, isPrimary], i) => (
                 <span key={i} className="text-[11px] font-bold px-2.5 py-1 rounded-full shadow" style={{
                   background: isPrimary ? TURQUOISE : "rgba(255,255,255,0.92)",
                   color: isPrimary ? "#fff" : GOLD
@@ -421,7 +421,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 08 担当者 ─────────────────────────────────────────────────────── */}
+      {/* ── 08 担当者 ───────────────────────────────────────────────────────*/}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>担当者</SectionLabel>
@@ -488,7 +488,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 10 料金 ───────────────────────────────────────────────────────── */}
+      {/* ── 10 料金 ────────────────────────────────────────────────────────*/}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>料金</SectionLabel>
@@ -498,7 +498,7 @@ export default function App() {
             <div className="text-center mb-5 pb-5 border-b border-gray-100">
               <p className="text-[13px] font-bold text-gray-500 mb-1">初回スポーツ栄養ヒアリング</p>
               <div className="flex items-baseline justify-center gap-1">
-                <span className="text-[40px] font-black" style={{ color: TURQUOISE }}>4,400</span>
+                <span className="text-[40px] font-black" style={{ color: TURQUOISE }}>8,800</span>
                 <span className="text-[16px] font-bold text-gray-600">円（税込）</span>
               </div>
               <div className="inline-flex items-center gap-1 mt-1 px-3 py-1 rounded-full text-[12px] font-bold" style={{ background: "#E6F8FA", color: TURQUOISE }}>
@@ -517,7 +517,7 @@ export default function App() {
             </ul>
 
             <p className="text-[11px] text-gray-400 leading-relaxed border-t border-gray-100 pt-4">
-              ※ 兄弟など複数名でのご相談や、ご相談内容によって料金が異なる場合があります。その場合は事前に公式LINEで内容を確認したうえで料金をご案内します。
+              ※ 兄弟など複数名でのご相談や、ご相談内容によって料金が異なる場合があります。その場合は事前に公式LINEで内容を確認したうえでご案内いたします。
             </p>
           </div>
         </div>
@@ -536,7 +536,7 @@ export default function App() {
               { icon: "💬", title: "LINEで問い合わせ", desc: "「初回ヒアリング希望」とメッセージを送信" },
               { icon: "📋", title: "日程・人数・相談内容を確認", desc: "個別に確認のうえ、日程を調整します" },
               { icon: "💳", title: "料金をご案内 → お支払い", desc: "内容確定後、Squareの決済リンクをお送りします" },
-              { icon: "📸", title: "食事写真・事前アンケートなどの準備", desc: "LINEで食事写真を送っていただき、お子さま本人にアンケートへ回答してもらいます" },
+              { icon: "📸", title: "食事写真・事前アンケートなどの準備", desc: "LINEで食事写真を送っていただき、お子さま本人にアンケートへ回答していただきます" },
               { icon: "🥗", title: "初回ヒアリング当日", desc: "60〜90分のヒアリング・補食づくりを行います" },
             ].map((step, i, arr) => (
               <div key={step.title}>
@@ -566,7 +566,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── FAQ ───────────────────────────────────────────────────────────── */}
+      {/* ── FAQ ──────────────────────────────────────────────────────────*/}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>FAQ</SectionLabel>
@@ -576,11 +576,11 @@ export default function App() {
             {[
               {
                 q: "兄弟まとめて相談できますか？",
-                a: "可能です。兄弟など複数名の場合は一人ひとりの競技状況・食事・目標を確認するため、料金が変わる場合があります。まずLINEでご相談ください。",
+                a: "可能です。兄弟など複数名の場合は一人ひとりの競技状況・食事・目標を確認するため、料金が変わる場合があります。まずLINEで内容をお聞かせください。",
               },
               {
                 q: "子どもだけの参加でもいいですか？",
-                a: "基本的にはお子さまと保護者で一緒にご参加いただくことをおすすめしています。食事サポートは保護者の協力が大切なため、一緒に確認する時間を設けています。",
+                a: "基本的にはお子さまと保護者で一緒にご参加いただくことをおすすめしています。食事サポートは保護者の協力が大切なため、一緒にご参加ください。",
               },
               {
                 q: "オンラインでも受けられますか？",
@@ -628,7 +628,7 @@ export default function App() {
           <div className="bg-white/10 backdrop-blur rounded-2xl p-5 mb-5">
             <div className="flex justify-between text-white/90 text-[13px] font-bold mb-1">
               <span>初回スポーツ栄養ヒアリング</span>
-              <span>4,400円（税込）</span>
+              <span>8,800円（税込）</span>
             </div>
             <div className="text-white/70 text-[12px]">所要時間：60〜90分 ／ 対象：小学生・中学生・高校生</div>
           </div>
@@ -657,7 +657,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── Footer ────────────────────────────────────────────────────────── */}
+      {/* ── Footer ─────────────────────────────────────────────────────────*/}
       <footer className="py-6 px-5 bg-[#1A2530] text-center">
         <img src={imgLogo} alt="SAILS OKINAWA" className="h-8 w-auto mx-auto opacity-40 invert" />
         <p className="text-[10px] text-white/30 mt-3">栄養士と学ぶ こども・アスリート・おうちごはん</p>
