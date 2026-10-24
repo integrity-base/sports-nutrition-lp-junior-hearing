@@ -47,7 +47,7 @@ function LineButton({ label = "公式LINEで初回ヒアリングの日程を相
 function LineIcon() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
-      <path d="M19.952 10.815C19.952 7.053 16.394 4 12 4C7.606 4 4.048 7.053 4.048 10.815C4.048 14.22 6.975 17.069 10.923 17.535C11.182 17.592 11.536 17.707 11.628 17.93C11.71 18.133 11.682 18.447 11.62 18.574L11.297 23.99C11.206 25.427 12.698 26.252 13.85 25.467L20.644 20.878C21.44 20.34 22.033 19.506 22.033 18.586V10.815C22.032 7.052 18.475 4.001 13.088 4.001C7.7 4.001 4.149 7.056 4.149 10.82C4.149 14.618 7.771 17.719 13.161 17.719C14.132 17.719 15.09 17.572 16.025 17.281" fill="white" />
+      <path d="M19.952 10.815C19.952 7.053 16.394 4 12 4C7.606 4 4.048 7.053 4.048 10.815C4.048 14.22 6.975 17.069 10.923 17.535C11.182 17.592 11.536 17.707 11.628 17.93C11.71 18.133 11.682 18.447 11.605 18.673C11.217 19.793 9.653 21.2 7.199 22.06C7.199 22.06 8.935 20.97 9.967 20.027C10.306 19.73 10.663 19.405 10.922 19.086C11.977 19.286 13.099 19.22 14.218 18.766C17.392 17.466 19.952 14.46 19.952 10.815ZM10.112 11.354C9.646 11.354 9.24 10.958 9.24 10.493C9.24 10.028 9.646 9.632 10.112 9.632C10.578 9.632 10.984 10.028 10.984 10.493C10.984 10.958 10.578 11.354 10.112 11.354ZM12.201 11.354C11.735 11.354 11.329 10.958 11.329 10.493C11.329 10.028 11.735 9.632 12.201 9.632C12.667 9.632 13.073 10.028 13.073 10.493C13.073 10.958 12.667 11.354 12.201 11.354ZM14.29 11.354C13.824 11.354 13.418 10.958 13.418 10.493C13.418 10.028 13.824 9.632 14.29 9.632C14.756 9.632 15.162 10.028 15.162 10.493C15.162 10.958 14.756 11.354 14.29 11.354Z" fill="white" />
     </svg>
   );
 }
@@ -85,16 +85,13 @@ export default function App() {
 
       {/* ── 01 ファーストビュー ───────────────────────────────────────────── */}
       <section className="relative overflow-hidden bg-white">
-        {/* Turquoise accent bar */}
         <div className="absolute top-0 left-0 right-0 h-1" style={{ background: `linear-gradient(90deg, ${TURQUOISE}, #0899A6)` }} />
 
         <div className="max-w-lg mx-auto px-5 pt-8 pb-10">
-          {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-bold mb-5" style={{ borderColor: TURQUOISE, color: TURQUOISE, background: "#E6F8FA" }}>
             <span>小学生・中学生・高校生 対象</span>
           </div>
 
-          {/* Main copy */}
           <h1 className="text-[26px] sm:text-[30px] font-black leading-tight mb-4 tracking-tight">
             スポーツを頑張る子の食事、<br />
             <span style={{ color: TURQUOISE }}>「これで合ってる？」</span><br />
@@ -105,16 +102,14 @@ export default function App() {
             今の食事や練習状況、お子さまの目標を確認しながら、今できていることと、これから見直したいことを一緒に整理します。
           </p>
 
-          {/* Hero image */}
           <div className="relative rounded-2xl overflow-hidden mb-6 bg-teal-50" style={{ aspectRatio: "16/10" }}>
             <img
               src={imgHearing}
               alt="子どもと保護者が矢野麻帆と一緒に初回ヒアリングを受けている様子"
               className="w-full h-full object-cover object-center"
             />
-            {/* Info chips overlay */}
             <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
-              {[["初回スポーツ栄養ヒアリング", true], ["60〜90分", false], ["8,800円（税込）", false]].map(([label, isPrimary], i) => (
+              {[ ["初回スポーツ栄養ヒアリング", true], ["60〜90分", false], ["8,800円（税込）", false] ].map(([label, isPrimary], i) => (
                 <span key={i} className="text-[11px] font-bold px-2.5 py-1 rounded-full shadow" style={{
                   background: isPrimary ? TURQUOISE : "rgba(255,255,255,0.92)",
                   color: isPrimary ? "#fff" : GOLD
@@ -192,7 +187,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Food photo highlight */}
           <div className="mt-6 rounded-2xl overflow-hidden border border-teal-100 bg-teal-50">
             <div className="flex items-stretch">
               <div className="w-24 shrink-0 bg-teal-50">
@@ -266,11 +260,10 @@ export default function App() {
             <img src={imgCharaGuide} alt="" aria-hidden className="w-20 shrink-0 drop-shadow-sm" />
           </div>
 
-          {/* Photo */}
           <div className="rounded-2xl overflow-hidden bg-teal-50 mb-6" style={{ aspectRatio: "4/3" }}>
             <img
               src={imgGroupCooking}
-              alt="矢野麻帆と子どもたちが一緒にテーブルを囲んで補食づくりをしている様子"
+              alt="矢野麻帆と子どもたちが一緒にテーブルを囲んで食事を見ながら話している様子"
               className="w-full h-full object-cover object-top"
             />
           </div>
@@ -305,65 +298,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 06 補食も一緒に作ります ───────────────────────────────────────── */}
-      <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
-        <div className="max-w-lg mx-auto">
-          <div className="flex items-start gap-3">
-            <div className="flex-1">
-              <SectionLabel>補食づくり</SectionLabel>
-              <h2 className="text-[20px] font-black leading-tight mb-4">
-                話を聞くだけではなく、<br />補食も一緒に作ります
-              </h2>
-            </div>
-            <img src={imgCharaGuide} alt="" aria-hidden className="w-16 shrink-0 mt-2 drop-shadow-sm" />
-          </div>
-
-          {/* 3 pillars */}
-          <div className="flex items-center justify-center gap-2 mb-6">
-            {["スポーツ栄養", "衛生の基本", "補食づくり"].map((label, i) => (
-              <div key={label} className="flex items-center gap-2">
-                <div className="bg-white rounded-xl px-3 py-2 text-center shadow-sm">
-                  <span className="text-[13px] font-black" style={{ color: TURQUOISE }}>{label}</span>
-                </div>
-                {i < 2 && <span className="font-bold text-gray-300">＋</span>}
-              </div>
-            ))}
-          </div>
-
-          {/* Cooking photos */}
-          <div className="rounded-2xl overflow-hidden bg-teal-50 mb-3" style={{ aspectRatio: "4/3" }}>
-            <img
-              src={imgRolling}
-              alt="矢野麻帆と子どもが一緒に生地を丸めて補食を作っている様子"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
-          <div className="grid grid-cols-2 gap-2 mb-5">
-            <div className="rounded-xl overflow-hidden bg-amber-50" style={{ aspectRatio: "4/3" }}>
-              <img
-                src={imgCookingChoco}
-                alt="子どもが生地にチョコレートを入れて補食を作っている様子"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden bg-orange-50" style={{ aspectRatio: "4/3" }}>
-              <img
-                src={imgCookingPan}
-                alt="フライパンで補食を調理している様子"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <p className="text-[14px] text-gray-700 leading-relaxed">
-            練習や部活にも取り入れやすい補食を実際に作りながら、家庭で調理するときに知っておきたい衛生の基本も伝えます。
-          </p>
-          <p className="text-[14px] font-bold mt-2" style={{ color: TURQUOISE }}>
-            「聞いて終わり」ではなく、家に帰ってから実践するところまで。
-          </p>
-        </div>
-      </section>
-
       {/* ── 07 当日の流れ ─────────────────────────────────────────────────── */}
       <section className="py-12 px-5 bg-white">
         <div className="max-w-lg mx-auto">
@@ -384,29 +318,23 @@ export default function App() {
           </div>
 
           <div className="relative pl-8">
-            {/* Timeline line */}
             <div className="absolute left-3.5 top-4 bottom-4 w-0.5" style={{ background: `linear-gradient(to bottom, ${TURQUOISE}, ${GOLD})` }} />
 
             {[
               {
                 num: "01", title: "スポーツ栄養ヒアリング",
-                desc: "競技、練習状況、身体づくりの目標、食事、補食、生活リズムなどを確認。",
+                desc: "競技、練習状況、身体づくりの目標、食事、生活リズムなどを確認。",
               },
               {
-                num: "02", title: "衛生の基本",
-                desc: "手洗い、調理器具の扱い、交差汚染、温度管理など。",
+                num: "02", title: "食事の整理と見直し",
+                desc: "現在の食事の傾向や、見直したい点を整理して、今すぐ意識したいことを確認。",
               },
               {
-                num: "03", title: "補食づくり",
-                desc: "実際に一緒に調理。",
-              },
-              {
-                num: "04", title: "振り返り",
+                num: "03", title: "振り返り",
                 desc: "今できていること、見直したいこと、まず取り組むことを整理。",
               },
             ].map((step, i, arr) => (
               <div key={step.num} className={`relative flex gap-4 ${i < arr.length - 1 ? "mb-7" : ""}`}>
-                {/* Dot */}
                 <div className="absolute -left-8 w-7 h-7 rounded-full flex items-center justify-center text-white text-[11px] font-black shrink-0"
                   style={{ background: i < 2 ? TURQUOISE : GOLD }}>
                   {step.num}
@@ -421,7 +349,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 08 担当者 ───────────────────────────────────────────────────────*/}
+      {/* ── 08 担当者 ─────────────────────────────────────────────────────── */}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>担当者</SectionLabel>
@@ -429,7 +357,6 @@ export default function App() {
 
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
             <div className="flex items-start gap-4 p-5">
-              {/* Photo */}
               <div className="w-24 h-24 rounded-2xl overflow-hidden bg-teal-50 shrink-0">
                 <img
                   src={imgYano}
@@ -488,7 +415,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── 10 料金 ────────────────────────────────────────────────────────*/}
+      {/* ── 10 料金 ──────────────────────────────────────────────────────── */}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>料金</SectionLabel>
@@ -508,7 +435,7 @@ export default function App() {
 
             <p className="text-[12px] font-bold text-gray-500 mb-3">含まれる内容</p>
             <ul className="space-y-2 mb-5">
-              {["スポーツ栄養ヒアリング", "衛生指導", "補食づくり", "振り返り"].map((item) => (
+              {["スポーツ栄養ヒアリング", "衛生指導", "食事の見直し", "振り返り"].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-[14px]">
                   <div className="w-1.5 h-1.5 rounded-full" style={{ background: GOLD }} />
                   {item}
@@ -517,7 +444,7 @@ export default function App() {
             </ul>
 
             <p className="text-[11px] text-gray-400 leading-relaxed border-t border-gray-100 pt-4">
-              ※ 兄弟など複数名でのご相談や、ご相談内容によって料金が異なる場合があります。その場合は事前に公式LINEで内容を確認したうえでご案内いたします。
+              ※ 兄弟など複数名でのご相談や、ご相談内容によって料金が異なる場合があります。その場合は事前に公式LINEで内容を確認したうえでご案内します。
             </p>
           </div>
         </div>
@@ -536,8 +463,8 @@ export default function App() {
               { icon: "💬", title: "LINEで問い合わせ", desc: "「初回ヒアリング希望」とメッセージを送信" },
               { icon: "📋", title: "日程・人数・相談内容を確認", desc: "個別に確認のうえ、日程を調整します" },
               { icon: "💳", title: "料金をご案内 → お支払い", desc: "内容確定後、Squareの決済リンクをお送りします" },
-              { icon: "📸", title: "食事写真・事前アンケートなどの準備", desc: "LINEで食事写真を送っていただき、お子さま本人にアンケートへ回答していただきます" },
-              { icon: "🥗", title: "初回ヒアリング当日", desc: "60〜90分のヒアリング・補食づくりを行います" },
+              { icon: "📸", title: "食事写真・事前アンケートなどの準備", desc: "LINEで食事写真を送っていただき、お子さま本人にアンケートへ回答してもらいます" },
+              { icon: "🥗", title: "初回ヒアリング当日", desc: "60〜90分で食事や生活の整理、振り返りを行います" },
             ].map((step, i, arr) => (
               <div key={step.title}>
                 <div className="flex gap-4 items-start bg-white">
@@ -566,7 +493,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────────────*/}
+      {/* ── FAQ ────────────────────────────────────────────────────────── */}
       <section className="py-12 px-5" style={{ background: "#F4FBFC" }}>
         <div className="max-w-lg mx-auto">
           <SectionLabel>FAQ</SectionLabel>
@@ -576,15 +503,15 @@ export default function App() {
             {[
               {
                 q: "兄弟まとめて相談できますか？",
-                a: "可能です。兄弟など複数名の場合は一人ひとりの競技状況・食事・目標を確認するため、料金が変わる場合があります。まずLINEで内容をお聞かせください。",
+                a: "可能です。兄弟など複数名の場合は一人ひとりの競技状況・食事・目標を確認するため、料金が変わる場合があります。まずLINEでご相談ください。",
               },
               {
                 q: "子どもだけの参加でもいいですか？",
-                a: "基本的にはお子さまと保護者で一緒にご参加いただくことをおすすめしています。食事サポートは保護者の協力が大切なため、一緒にご参加ください。",
+                a: "基本的にはお子さまと保護者で一緒にご参加いただくことをおすすめしています。食事サポートは保護者の協力が大切なため、一緒にご参加いただく方が安心です。",
               },
               {
                 q: "オンラインでも受けられますか？",
-                a: "現在は対面のみです。補食づくりも含まれるため、実際にお越しいただくかたちとなります。",
+                a: "現在は対面のみです。食事や生活の見直しをお手伝いするため、実際にお越しいただくかたちとなります。",
               },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-xl overflow-hidden border border-gray-100">
@@ -594,7 +521,7 @@ export default function App() {
                 >
                   <span className="text-[13px] font-bold pr-3">{item.q}</span>
                   <span className="shrink-0 text-lg" style={{ color: TURQUOISE }}>
-                    {openFaq === i ? "−" : "＋"}
+                    {openFaq === i ? "−" : "+"}
                   </span>
                 </button>
                 {openFaq === i && (
@@ -647,7 +574,6 @@ export default function App() {
             LINEで日程・相談内容を確認します。
           </p>
 
-          {/* QR code for desktop */}
           <div className="hidden sm:flex flex-col items-center gap-2 mt-4 bg-white/10 rounded-2xl p-4 max-w-[200px] mx-auto">
             <div className="w-24 h-24 bg-white rounded-xl flex items-center justify-center text-gray-400 text-[11px]">
               QRコード
@@ -657,7 +583,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── Footer ─────────────────────────────────────────────────────────*/}
+      {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer className="py-6 px-5 bg-[#1A2530] text-center">
         <img src={imgLogo} alt="SAILS OKINAWA" className="h-8 w-auto mx-auto opacity-40 invert" />
         <p className="text-[10px] text-white/30 mt-3">栄養士と学ぶ こども・アスリート・おうちごはん</p>
