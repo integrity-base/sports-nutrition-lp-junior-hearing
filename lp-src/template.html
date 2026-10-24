@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スポーツ栄養カウンセリング｜SAILS OKINAWA</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+body{-webkit-font-smoothing:antialiased}
+
+body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+.-left-8{left:-2rem}
+.absolute{position:absolute}
+.active\:scale-95:active{transform:scale(.95)}
+.backdrop-blur{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.bg-\[\#1A2530\]{background-color:#1A2530}
+.bg-amber-50{background-color:#fffbeb}
+.bg-orange-50{background-color:#fff7ed}
+.bg-teal-50{background-color:#f0fdfa}
+.bg-white{background-color:#fff}
+.bg-white\/10{background-color:rgba(255,255,255,.1)}
+.bg-white\/90{background-color:rgba(255,255,255,.9)}
+.border{border-width:1px;border-style:solid}
+.border-2{border-width:2px;border-style:solid}
+.border-amber-100{border-color:#fde68a}
+.border-b{border-bottom-width:1px;border-bottom-style:solid}
+.border-gray-100{border-color:#f3f4f6}
+.border-gray-50{border-color:#f9fafb}
+.border-l-4{border-left-width:4px;border-left-style:solid}
+.border-t{border-top-width:1px;border-top-style:solid}
+.border-teal-100{border-color:#ccfbf1}
+.bottom-3{bottom:0.75rem}
+.bottom-4{bottom:1rem}
+.drop-shadow-sm{filter:drop-shadow(0 1px 1px rgba(0,0,0,.08))}
+.flex{display:flex}
+.flex-1{flex:1 1 0%}
+.flex-col{flex-direction:column}
+.flex-wrap{flex-wrap:wrap}
+.font-black{font-weight:900}
+.font-bold{font-weight:700}
+.gap-1{gap:0.25rem}
+.gap-1\.5{gap:0.375rem}
+.gap-2{gap:0.5rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.grid{display:grid}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.h-1{height:0.25rem}
+.h-1\.5{height:0.375rem}
+.h-10{height:2.5rem}
+.h-24{height:6rem}
+.h-5{height:1.25rem}
+.h-7{height:1.75rem}
+.h-8{height:2rem}
+.h-\[2px\]{height:2px}
+.h-full{height:100%}
+.hidden{display:none}
+.inline-flex{display:inline-flex}
+.invert{filter:invert(1)}
+.items-baseline{align-items:baseline}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.leading-relaxed{line-height:1.625}
+.leading-snug{line-height:1.375}
+.leading-tight{line-height:1.25}
+.left-0{left:0}
+.left-3{left:0.75rem}
+.left-3\.5{left:0.875rem}
+.max-w-\[200px\]{max-width:200px}
+.max-w-lg{max-width:32rem}
+.max-w-sm{max-width:24rem}
+.mb-0\.5{margin-bottom:0.125rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-4{margin-bottom:1rem}
+.mb-5{margin-bottom:1.25rem}
+.mb-6{margin-bottom:1.5rem}
+.mb-7{margin-bottom:1.75rem}
+.mb-8{margin-bottom:2rem}
+.min-h-screen{min-height:100vh}
+.ml-auto{margin-left:auto}
+.mt-0\.5{margin-top:0.125rem}
+.mt-1{margin-top:0.25rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-4{margin-top:1rem}
+.mt-5{margin-top:1.25rem}
+.mt-6{margin-top:1.5rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.object-center{object-position:center}
+.object-contain{object-fit:contain}
+.object-cover{object-fit:cover}
+.object-top{object-position:top}
+.opacity-40{opacity:.4}
+.overflow-hidden{overflow:hidden}
+.overflow-x-hidden{overflow-x:hidden}
+.p-1{padding:0.25rem}
+.p-3{padding:0.75rem}
+.p-4{padding:1rem}
+.p-5{padding:1.25rem}
+.p-6{padding:1.5rem}
+.pb-10{padding-bottom:2.5rem}
+.pb-2{padding-bottom:0.5rem}
+.pb-4{padding-bottom:1rem}
+.pb-5{padding-bottom:1.25rem}
+.pl-2{padding-left:0.5rem}
+.pl-5{padding-left:1.25rem}
+.pl-8{padding-left:2rem}
+.pr-3{padding-right:0.75rem}
+.pt-3{padding-top:0.75rem}
+.pt-4{padding-top:1rem}
+.pt-8{padding-top:2rem}
+.px-2{padding-left:0.5rem;padding-right:0.5rem}
+.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.px-6{padding-left:1.5rem;padding-right:1.5rem}
+.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.py-12{padding-top:3rem;padding-bottom:3rem}
+.py-14{padding-top:3.5rem;padding-bottom:3.5rem}
+.py-2{padding-top:0.5rem;padding-bottom:0.5rem}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.py-6{padding-top:1.5rem;padding-bottom:1.5rem}
+.relative{position:relative}
+.right-0{right:0}
+.right-3{right:0.75rem}
+.rounded-2xl{border-radius:1rem}
+.rounded-full{border-radius:9999px}
+.rounded-xl{border-radius:0.75rem}
+.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.shadow-sm{box-shadow:0 1px 2px 0 rgba(0,0,0,.05)}
+.shadow-xl{box-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1)}
+.shrink-0{flex-shrink:0}
+@media(min-width:640px){.sm\:flex{display:flex}}
+@media(min-width:640px){.sm\:inline{display:inline}}
+@media(min-width:640px){.sm\:text-\[30px\]{font-size:30px}}
+.space-y-2 > * + *{margin-top:0.5rem}
+.space-y-3 > * + *{margin-top:0.75rem}
+.sticky{position:sticky}
+.text-\[\#1A2530\]{color:#1A2530}
+.text-\[10px\]{font-size:10px}
+.text-\[11px\]{font-size:11px}
+.text-\[12px\]{font-size:12px}
+.text-\[13px\]{font-size:13px}
+.text-\[14px\]{font-size:14px}
+.text-\[15px\]{font-size:15px}
+.text-\[16px\]{font-size:16px}
+.text-\[20px\]{font-size:20px}
+.text-\[22px\]{font-size:22px}
+.text-\[26px\]{font-size:26px}
+.text-\[40px\]{font-size:40px}
+.text-center{text-align:center}
+.text-gray-300{color:#d1d5db}
+.text-gray-400{color:#9ca3af}
+.text-gray-500{color:#6b7280}
+.text-gray-600{color:#4b5563}
+.text-gray-700{color:#374151}
+.text-left{text-align:left}
+.text-lg{font-size:1.125rem;line-height:1.75rem}
+.text-white{color:#fff}
+.text-white\/30{color:rgba(255,255,255,.3)}
+.text-white\/70{color:rgba(255,255,255,.7)}
+.text-white\/80{color:rgba(255,255,255,.8)}
+.text-white\/90{color:rgba(255,255,255,.9)}
+.text-xl{font-size:1.25rem;line-height:1.75rem}
+.text-xs{font-size:0.75rem;line-height:1rem}
+.top-0{top:0}
+.top-4{top:1rem}
+.tracking-tight{letter-spacing:-0.025em}
+.tracking-widest{letter-spacing:0.1em}
+.transition-transform{transition-property:transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.uppercase{text-transform:uppercase}
+.w-0\.5{width:0.125rem}
+.w-1\.5{width:0.375rem}
+.w-10{width:2.5rem}
+.w-16{width:4rem}
+.w-20{width:5rem}
+.w-24{width:6rem}
+.w-5{width:1.25rem}
+.w-7{width:1.75rem}
+.w-auto{width:auto}
+.w-full{width:100%}
+.z-50{z-index:50}
+</style>
+</head>
+<body class="min-h-screen bg-white text-[#1A2530] overflow-x-hidden">
+
+  <!-- Sticky header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100 px-4 py-3 flex items-center justify-between">
+    <div>
+      <img src="{{logo}}" alt="SAILS OKINAWA" class="h-8 w-auto">
+    </div>
+    <a href="#line" class="flex items-center gap-1.5 text-white text-[11px] font-bold px-3 py-2 rounded-xl" style="background:#06C755">
+      <img src="{{lineIcon}}" alt="LINE" style="width:24px;height:24px;display:block" class="shrink-0">
+      <span class="hidden sm:inline">LINE相談</span>
+    </a>
+  </header>
+
+  <!-- 01 ファーストビュー -->
+  <section class="relative overflow-hidden bg-white">
+    <div class="absolute top-0 left-0 right-0 h-1" style="background:linear-gradient(90deg,#0BBDCC,#0899A6)"></div>
+    <div class="max-w-lg mx-auto px-5 pt-8 pb-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-bold mb-4" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">
+        <span>小・中・高校生のジュニアアスリート × 保護者</span>
+      </div>
+      <p class="text-[15px] font-black mb-2" style="color:#C9972B">スポーツ栄養カウンセリング</p>
+      <h1 class="text-[26px] sm:text-[30px] font-black leading-tight mb-4 tracking-tight">
+        わが子に合った食事の<br>
+        <span style="color:#0BBDCC">量・内容・タイミング</span>を<br>
+        親子で考える60分。
+      </h1>
+      <p class="text-[14px] text-gray-600 leading-relaxed mb-6">
+        必要なカロリーや、ご飯・たんぱく質の量の目安、練習や試合に合わせた食べ方まで。スポーツ栄養の専門家と一緒に、わが子に合った食事の考え方を具体的にします。
+      </p>
+      <div class="relative rounded-2xl overflow-hidden mb-6 bg-teal-50" style="aspect-ratio:16/10">
+        <img src="{{heroHearing}}" alt="子どもと保護者が矢野麻帆と一緒にスポーツ栄養カウンセリングを受けている様子" class="w-full h-full object-cover object-center">
+        <div class="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
+          <span class="text-[11px] font-bold px-2.5 py-1 rounded-full shadow" style="background:#0BBDCC;color:#fff">スポーツ栄養カウンセリング</span>
+          <span class="text-[11px] font-bold px-2.5 py-1 rounded-full shadow" style="background:rgba(255,255,255,0.92);color:#C9972B">60分・対面</span>
+          <span class="text-[11px] font-bold px-2.5 py-1 rounded-full shadow" style="background:rgba(255,255,255,0.92);color:#C9972B">11,000円〜（税込）／1名</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <a href="#line" class="flex items-center gap-3 px-6 py-4 rounded-2xl text-white font-bold text-[15px] leading-snug shadow-lg active:scale-95 transition-transform w-full max-w-sm justify-center" style="background:#06C755">
+          <img src="{{lineIcon}}" alt="LINE" style="width:24px;height:24px;display:block" class="shrink-0">
+          <span class="text-left">公式LINEで日程の相談をする</span>
+        </a>
+        <p class="text-xs text-gray-500">LINEのメニューからお申し込みいただけます</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 こんなお悩みありませんか？ -->
+  <section class="py-12 px-5" style="background:#F4FBFC">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-start gap-4">
+        <div class="flex-1">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">お悩み</span>
+      </div>
+          <h2 class="text-[20px] font-black leading-tight mb-6">こんなお悩み、<br>ありませんか？</h2>
+        </div>
+        <img src="{{charaPeek}}" alt="" aria-hidden class="w-20 shrink-0 mt-1 drop-shadow-sm">
+      </div>
+      <ul class="space-y-3 mb-6">
+        <li class="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"><span class="text-lg mt-0.5">😔</span><span class="text-[14px] leading-snug text-gray-700">うちの子に必要な食事量が分からない</span></li>
+        <li class="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"><span class="text-lg mt-0.5">😔</span><span class="text-[14px] leading-snug text-gray-700">練習や試合に合わせて、どんな補食を用意すればいいの？</span></li>
+        <li class="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"><span class="text-lg mt-0.5">😔</span><span class="text-[14px] leading-snug text-gray-700">好き嫌いが多くて、栄養バランスが心配</span></li>
+        <li class="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"><span class="text-lg mt-0.5">😔</span><span class="text-[14px] leading-snug text-gray-700">ご飯の量やたんぱく質の量は、どれくらい必要？</span></li>
+        <li class="flex items-start gap-3 bg-white rounded-xl px-4 py-3 shadow-sm"><span class="text-lg mt-0.5">😔</span><span class="text-[14px] leading-snug text-gray-700">学校や部活で忙しく、毎日の食事づくりに迷ってしまう</span></li>
+      </ul>
+      <div class="rounded-xl p-4 border-l-4" style="border-color:#0BBDCC;background:white">
+        <p class="text-[14px] font-bold leading-relaxed" style="color:#1A2530">同じ「食事の悩み」でも、競技や練習量、成長、生活リズムによって見るところは一人ひとり違います。</p>
+        <p class="text-[14px] font-black mt-2" style="color:#0BBDCC">そのお悩み、スポーツ栄養の専門家と一緒に整理できます。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 カウンセリングで行うこと -->
+  <section class="py-12 px-5 bg-white">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">カウンセリング内容</span>
+      </div>
+      <h2 class="text-[20px] font-black leading-tight mb-2">カウンセリングで<br>行うこと</h2>
+      <p class="text-[13px] text-gray-500">お子さんの状況に合わせて、必要なことを一つひとつ丁寧に。</p>
+      <div class="flex items-center gap-2 mt-6 mb-3">
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full text-white" style="background:#C9972B">事前</span>
+        <span class="text-[14px] font-black">LINEで準備していただくこと</span>
+      </div>
+      <div class="space-y-2">
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#C9972B">1</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">事前アンケート</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">食事の状況・練習スケジュール・生活リズムなど。保護者とお子さま本人に回答していただきます。</p></div>
+        </div>
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#C9972B">2</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">3日分の食事写真</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">普段の食事をスマホで撮って、LINEで送るだけでOKです。</p></div>
+        </div>
+      </div>
+      <div class="mt-3 rounded-2xl overflow-hidden border border-teal-100">
+        <div class="w-full bg-teal-50" style="aspect-ratio:4/3">
+          <img src="{{mealPhoto}}" alt="LINEで送っていただく普段の食事写真の例" class="w-full h-full object-cover object-top">
+        </div>
+        <p class="text-[12px] text-gray-500 px-4 py-3">朝・昼・夜・補食など、実際に食べているものをそのまま撮影してください。</p>
+      </div>
+      <div class="flex items-center gap-2 mt-6 mb-3">
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full text-white" style="background:#0BBDCC">当日 60分</span>
+        <span class="text-[14px] font-black">親子でカウンセリング</span>
+      </div>
+      <div class="rounded-2xl overflow-hidden bg-teal-50 mb-3" style="aspect-ratio:16/9">
+        <img src="{{counseling}}" alt="矢野麻帆がノートパソコンを使いながらカウンセリングしている様子" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-2">
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#0BBDCC">3</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">アンケートに基づいた栄養計算</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">必要なカロリーやPFCバランス（たんぱく質・脂質・炭水化物）を計算します。</p></div>
+        </div>
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#0BBDCC">4</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">ご飯量・たんぱく質量の目安とアドバイス</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">毎日の食事で「どれくらい食べればいいか」が分かるようにお伝えします。</p></div>
+        </div>
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#0BBDCC">5</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">スケジュールに合わせた栄養摂取の戦略</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">学校・部活・試合の予定に合わせて、いつ・何を食べるかを一緒に考えます。</p></div>
+        </div>
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#0BBDCC">6</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">食材カードを使った好き嫌いの確認</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">お子さま本人と一緒に、食べられる食材・苦手な食材を確認します。</p></div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 mt-6 mb-3">
+        <span class="text-[11px] font-bold px-2.5 py-1 rounded-full text-white" style="background:#0899A6">お渡し</span>
+        <span class="text-[14px] font-black">カウンセリングのまとめ</span>
+      </div>
+      <div class="space-y-2">
+        <div class="flex gap-3 items-start bg-white rounded-xl px-4 py-3 shadow-sm">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-[12px] font-black shrink-0" style="background:#0899A6">7</div>
+          <div class="flex-1"><p class="text-[14px] font-black leading-snug">個別資料のお渡し</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">カウンセリングの内容をまとめた、お子さま専用の資料をお渡しします。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 受けると変わること -->
+  <section class="py-12 px-5" style="background:#F4FBFC">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">受けると変わること</span>
+      </div>
+      <h2 class="text-[20px] font-black leading-tight mb-2">スポーツ栄養を、<br><span style="color:#0BBDCC">知識から日常へ。</span></h2>
+      <p class="text-[13px] text-gray-500 mb-6">個別カウンセリングで、わが子に合った食事の考え方を具体的にします。</p>
+      <div class="space-y-3">
+        <div class="bg-white rounded-2xl px-5 py-4 shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[13px] shrink-0" style="background:#0BBDCC">1</div>
+            <div class="text-[15px] font-black leading-snug">生活にスポーツ栄養の戦略が入る</div>
+          </div>
+          <p class="text-[13px] text-gray-600 leading-relaxed">学校・部活・試合に合わせた、食事や補食の考え方が分かります。</p>
+        </div>
+        <div class="bg-white rounded-2xl px-5 py-4 shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[13px] shrink-0" style="background:#C9972B">2</div>
+            <div class="text-[15px] font-black leading-snug">家庭の料理の時の目安ができる</div>
+          </div>
+          <p class="text-[13px] text-gray-600 leading-relaxed">ご飯やたんぱく質の量の目安が分かり、食事の準備がしやすくなります。</p>
+        </div>
+        <div class="bg-white rounded-2xl px-5 py-4 shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[13px] shrink-0" style="background:#0BBDCC">3</div>
+            <div class="text-[15px] font-black leading-snug">必要カロリーと今の食事の差が見える</div>
+          </div>
+          <p class="text-[13px] text-gray-600 leading-relaxed">必要な量と今の摂取量を比べて、見直すポイントが分かります。</p>
+        </div>
+        <div class="bg-white rounded-2xl px-5 py-4 shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-[13px] shrink-0" style="background:#C9972B">4</div>
+            <div class="text-[15px] font-black leading-snug">好き嫌いに寄り添ったご飯のヒントになる</div>
+          </div>
+          <p class="text-[13px] text-gray-600 leading-relaxed">食べられる食材から、無理なく続けられる食事の工夫が見つかります。</p>
+        </div>
+      </div>
+      <div class="mt-6 text-center">
+        <p class="text-[14px] font-black text-gray-700 mb-6">全部を一度に変えるのではなく、<br><span style="color:#0BBDCC">今のお子さまに必要なことから。</span></p>
+      <div class="flex flex-col items-center gap-2">
+        <a href="#line" class="flex items-center gap-3 px-6 py-4 rounded-2xl text-white font-bold text-[15px] leading-snug shadow-lg active:scale-95 transition-transform w-full max-w-sm justify-center" style="background:#06C755">
+          <img src="{{lineIcon}}" alt="LINE" style="width:24px;height:24px;display:block" class="shrink-0">
+          <span class="text-left">公式LINEで日程の相談をする</span>
+        </a>
+        <p class="text-xs text-gray-500">LINEのメニューからお申し込みいただけます</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 お子さま本人の話も聞きます -->
+  <section class="py-12 px-5 bg-white">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+            <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">お子さま本人</span>
+          </div>
+      <div class="flex items-start gap-4 mb-5">
+        <div class="flex-1"><h2 class="text-[20px] font-black leading-tight">お子さま本人の<br>話も聞きます</h2></div>
+        <img src="{{charaGuide}}" alt="" aria-hidden class="w-20 shrink-0 drop-shadow-sm">
+      </div>
+      <div class="rounded-2xl overflow-hidden bg-teal-50 mb-6" style="aspect-ratio:4/3">
+        <img src="{{listening}}" alt="お子さま本人が真剣に話を聞いている様子" class="w-full h-full object-cover object-top">
+      </div>
+      <p class="text-[14px] text-gray-700 leading-relaxed mb-4">食事を準備するのは保護者でも、<strong class="font-bold" style="color:#1A2530">実際に食べて、練習や試合をするのはお子さま本人です。</strong></p>
+      <p class="text-[14px] text-gray-700 leading-relaxed mb-4">だからSAILSでは、保護者の困りごとだけでなく、</p>
+      <ul class="space-y-2 mb-5 pl-2">
+        <li class="flex items-center gap-2 text-[14px] text-gray-700"><div class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#C9972B"></div>競技でどうなりたいか</li>
+        <li class="flex items-center gap-2 text-[14px] text-gray-700"><div class="w-1.5 h-1.5 rounded-full shrink-0" style="background:#C9972B"></div>食事についてどう感じているか</li>
+      </ul>
+      <p class="text-[14px] text-gray-700 leading-relaxed mb-5">も大切にしています。カウンセリング前には、お子さま本人にも事前アンケートに回答してもらい、当日は食材カードを使って、好きな食材・苦手な食材も一緒に確認します。</p>
+      <div class="rounded-xl p-4 border-l-4" style="border-color:#C9972B;background:#FBF4E6">
+        <p class="text-[14px] font-black leading-relaxed" style="color:#1A2530">自分の目標と食事がどうつながっているのか。<br><span style="color:#C9972B">親子で一緒に考えるきっかけに。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 担当者 -->
+  <section class="py-12 px-5" style="background:#F4FBFC">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+            <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">担当者</span>
+          </div>
+      <h2 class="text-[20px] font-black leading-tight mb-6">担当者</h2>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <div class="flex items-start gap-4 p-5">
+          <div class="w-24 h-24 rounded-2xl overflow-hidden bg-teal-50 shrink-0">
+            <img src="{{yano}}" alt="矢野麻帆 – 栄養士・調理師・製菓衛生師・保育士" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="flex-1">
+            <p class="text-[11px] font-bold mb-0.5" style="color:#C9972B">SAILS OKINAWA</p>
+            <h3 class="text-[20px] font-black leading-tight mb-1">矢野 麻帆</h3>
+            <div class="flex flex-wrap gap-1">
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">栄養士</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">調理師</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">製菓衛生師</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">保育士</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-5 pb-5 space-y-3 border-t border-gray-50 pt-4">
+          <p class="text-[13px] text-gray-700 leading-relaxed">ジュニアアスリートからプロ選手まで、食事や身体づくりのサポートを行っています。</p>
+          <p class="text-[13px] text-gray-700 leading-relaxed">栄養について「知る」だけではなく、毎日の食事でどう実践するかまで一緒に考えることを大切にしています。</p>
+          <p class="text-[13px] font-bold leading-relaxed" style="color:#0BBDCC">競技や練習量、成長、生活リズム、目標は一人ひとり違うため、決まった食事方法を当てはめず、その子の今の状態から考えます。</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden mt-4">
+        <div class="flex items-start gap-4 p-5">
+          <div class="w-24 h-24 rounded-2xl overflow-hidden bg-teal-50 shrink-0">
+            <img src="{{tamashiro}}" alt="玉城あさ香 – 公認スポーツ栄養士・管理栄養士" class="w-full h-full object-cover object-top">
+          </div>
+          <div class="flex-1">
+            <p class="text-[11px] font-bold mb-0.5" style="color:#C9972B">SAILS OKINAWA</p>
+            <h3 class="text-[20px] font-black leading-tight mb-1">玉城 あさ香</h3>
+            <div class="flex flex-wrap gap-1">
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">公認スポーツ栄養士</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full border font-bold" style="border-color:#0BBDCC;color:#0BBDCC;background:#E6F8FA">管理栄養士</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-5 pb-5 space-y-3 border-t border-gray-50 pt-4">
+          <p class="text-[13px] text-gray-700 leading-relaxed">琉球大学卒業。大学野球選手の栄養サポートを担当し、現在はセーリング連盟の合宿で食事提供に携わる。</p>
+          <p class="text-[13px] text-gray-700 leading-relaxed">その他、スポーツ栄養の普及や栄養教育を行っている。</p>
+          <p class="text-[12px] text-gray-500">サポート競技：野球／セーリング／ハンドボール</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 開催場所 -->
+  <section class="py-12 px-5 bg-white">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+            <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+            <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">開催場所</span>
+          </div>
+      <h2 class="text-[20px] font-black leading-tight mb-6">開催場所</h2>
+      <div class="rounded-2xl overflow-hidden bg-teal-50 mb-4" style="aspect-ratio:4/3">
+        <img src="{{venue}}" alt="SAILSの白を基調とした清潔感ある店内、ターコイズのペンダントライト" class="w-full h-full object-cover">
+      </div>
+      <div class="flex items-start gap-3 rounded-xl border border-gray-100 px-4 py-3 shadow-sm">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="shrink-0 mt-0.5" style="color:#0BBDCC"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"></path></svg>
+        <div>
+          <p class="text-[13px] font-bold">仲西1丁目2-1 共和ビル3階-B</p>
+          <p class="text-[11px] text-gray-500 mt-0.5">白を基調とした清潔感のある店内で行います</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 実施概要・料金 -->
+  <section class="py-12 px-5" style="background:#F4FBFC">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">実施概要</span>
+      </div>
+      <h2 class="text-[20px] font-black leading-tight mb-6">実施概要・料金</h2>
+      <div class="bg-white rounded-2xl shadow-sm p-6 border border-teal-100">
+        <div class="text-center mb-4">
+          <p class="text-[13px] font-bold text-gray-500 mb-3">スポーツ栄養カウンセリング（お子さま1名あたり）</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-xl py-3" style="background:#F4FBFC">
+              <p class="text-[12px] font-bold text-gray-600 mb-1">小学生・中学生</p>
+              <p><span class="font-black" style="color:#0BBDCC;font-size:28px">11,000</span><span class="text-[12px] font-bold text-gray-600">円</span></p>
+            </div>
+            <div class="rounded-xl py-3" style="background:#F4FBFC">
+              <p class="text-[12px] font-bold text-gray-600 mb-1">高校生</p>
+              <p><span class="font-black" style="color:#0BBDCC;font-size:28px">16,500</span><span class="text-[12px] font-bold text-gray-600">円</span></p>
+            </div>
+          </div>
+          <p class="text-[11px] text-gray-500 mt-2">（税込）</p>
+        </div>
+        <div class="border-t border-gray-100">
+          <div class="flex gap-3 py-3 border-b border-gray-100">
+            <div class="text-[12px] font-bold shrink-0" style="color:#0BBDCC;width:5.5rem">対象</div>
+            <div class="flex-1 text-[13px] text-gray-700 leading-relaxed">小学生・中学生・高校生のジュニアアスリート（競技種目は問いません）</div>
+          </div>
+          <div class="flex gap-3 py-3 border-b border-gray-100">
+            <div class="text-[12px] font-bold shrink-0" style="color:#0BBDCC;width:5.5rem">時間</div>
+            <div class="flex-1 text-[13px] text-gray-700 leading-relaxed">60分（対面）</div>
+          </div>
+          <div class="flex gap-3 py-3 border-b border-gray-100">
+            <div class="text-[12px] font-bold shrink-0" style="color:#0BBDCC;width:5.5rem">場所</div>
+            <div class="flex-1 text-[13px] text-gray-700 leading-relaxed">SAILS OKINAWA（浦添市仲西）</div>
+          </div>
+          <div class="flex gap-3 py-3 border-b border-gray-100">
+            <div class="text-[12px] font-bold shrink-0" style="color:#0BBDCC;width:5.5rem">参加条件</div>
+            <div class="flex-1 text-[13px] text-gray-700 leading-relaxed"><span class="font-black" style="color:#C9972B">お子さん・保護者ともに<br>参加必須</span></div>
+          </div>
+          <div class="flex gap-3 py-3 border-b border-gray-100">
+            <div class="text-[12px] font-bold shrink-0" style="color:#0BBDCC;width:5.5rem">お渡しするもの</div>
+            <div class="flex-1 text-[13px] text-gray-700 leading-relaxed">個別に作成した資料</div>
+          </div>
+        </div>
+        <p class="text-[11px] text-gray-400 leading-relaxed pt-4">※ 料金はお子さま1名あたりの金額です。兄弟など複数名でご参加の場合も、お一人おひとり分の料金をいただいております（例：中学生と高校生のごきょうだいの場合は11,000円＋16,500円）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 申込の流れ -->
+  <section class="py-12 px-5 bg-white">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">申込の流れ</span>
+      </div>
+      <h2 class="text-[20px] font-black leading-tight mb-7">お申し込みは<br>公式LINEから</h2>
+      <div>
+        <div><div class="flex gap-4 items-start bg-white"><div class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 border-2" style="border-color:#06C755;background:#f0fff4">💬</div><div class="flex-1"><p class="text-[14px] font-black">公式LINEからお申し込み</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">メニューの「スポーツ栄養カウンセリング」をタップしてください</p></div></div><div class="flex pl-5 py-1"><div class="w-0.5 h-5" style="background:#E0F4F6"></div></div></div>
+        <div><div class="flex gap-4 items-start bg-white"><div class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 border-2" style="border-color:#0BBDCC;background:#E6F8FA">📋</div><div class="flex-1"><p class="text-[14px] font-black">日程・人数を確認</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">個別に確認のうえ、日程を調整します</p></div></div><div class="flex pl-5 py-1"><div class="w-0.5 h-5" style="background:#E0F4F6"></div></div></div>
+        <div><div class="flex gap-4 items-start bg-white"><div class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 border-2" style="border-color:#0BBDCC;background:#E6F8FA">💳</div><div class="flex-1"><p class="text-[14px] font-black">料金をご案内 → お支払い</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">内容確定後、Squareの決済リンクをお送りします</p></div></div><div class="flex pl-5 py-1"><div class="w-0.5 h-5" style="background:#E0F4F6"></div></div></div>
+        <div><div class="flex gap-4 items-start bg-white"><div class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 border-2" style="border-color:#0BBDCC;background:#E6F8FA">📸</div><div class="flex-1"><p class="text-[14px] font-black">事前アンケート・3日分の食事写真</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">保護者とお子さま本人のアンケートへの回答と、食事写真をLINEでお送りください</p></div></div><div class="flex pl-5 py-1"><div class="w-0.5 h-5" style="background:#E0F4F6"></div></div></div>
+        <div><div class="flex gap-4 items-start bg-white"><div class="w-10 h-10 rounded-full flex items-center justify-center text-xl shrink-0 border-2" style="border-color:#0BBDCC;background:#E6F8FA">🥗</div><div class="flex-1"><p class="text-[14px] font-black">カウンセリング当日（60分）</p><p class="text-[12px] text-gray-500 leading-snug mt-0.5">親子でご来店ください。内容をまとめた個別資料をお渡しします</p></div></div></div>
+      </div>
+      <div class="mt-5 rounded-xl p-3 text-[12px] text-gray-500 border border-amber-100 bg-amber-50 flex gap-2">
+        <span class="shrink-0">💡</span>
+        <span>LINEを送った時点では予約確定ではありません。日程・内容を確認してからのご案内となります。ご不明点がある場合も、お気軽にご相談ください。</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-12 px-5" style="background:#F4FBFC">
+    <div class="max-w-lg mx-auto">
+      <div class="flex items-center gap-2 mb-3">
+        <div class="w-5 h-[2px]" style="background:#C9972B"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#C9972B">FAQ</span>
+      </div>
+      <h2 class="text-[20px] font-black leading-tight mb-6">よくある質問</h2>
+      <div class="space-y-2">
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 faq-item">
+          <button class="w-full flex items-center justify-between p-4 text-left faq-btn" onclick="toggleFaq(this)">
+            <span class="text-[13px] font-bold pr-3">子どもだけ、または保護者だけの参加はできますか？</span>
+            <span class="shrink-0 text-lg faq-icon" style="color:#0BBDCC">＋</span>
+          </button>
+          <div class="faq-answer hidden px-4 pb-4 text-[13px] text-gray-600 leading-relaxed border-t border-gray-50 pt-3">お子さん・保護者ともにご参加が必須です。食事を用意する保護者と、実際に食べて練習や試合をするお子さま本人が一緒に聞くことで、家庭で実践しやすくなります。</div>
+        </div>
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 faq-item">
+          <button class="w-full flex items-center justify-between p-4 text-left faq-btn" onclick="toggleFaq(this)">
+            <span class="text-[13px] font-bold pr-3">兄弟まとめて相談できますか？</span>
+            <span class="shrink-0 text-lg faq-icon" style="color:#0BBDCC">＋</span>
+          </button>
+          <div class="faq-answer hidden px-4 pb-4 text-[13px] text-gray-600 leading-relaxed border-t border-gray-50 pt-3">可能です。兄弟など複数名の場合も、それぞれの競技状況・食事・目標を一人ひとり確認するため、料金はお子さま1名あたり（小学生・中学生11,000円／高校生16,500円）となります。まずLINEでご相談ください。</div>
+        </div>
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 faq-item">
+          <button class="w-full flex items-center justify-between p-4 text-left faq-btn" onclick="toggleFaq(this)">
+            <span class="text-[13px] font-bold pr-3">事前に何を準備すればいいですか？</span>
+            <span class="shrink-0 text-lg faq-icon" style="color:#0BBDCC">＋</span>
+          </button>
+          <div class="faq-answer hidden px-4 pb-4 text-[13px] text-gray-600 leading-relaxed border-t border-gray-50 pt-3">事前アンケートへの回答（保護者・お子さま本人）と、3日分の食事写真をLINEでお送りください。写真はスマホで撮影したものでOKです。</div>
+        </div>
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 faq-item">
+          <button class="w-full flex items-center justify-between p-4 text-left faq-btn" onclick="toggleFaq(this)">
+            <span class="text-[13px] font-bold pr-3">どんな競技でも大丈夫ですか？</span>
+            <span class="shrink-0 text-lg faq-icon" style="color:#0BBDCC">＋</span>
+          </button>
+          <div class="faq-answer hidden px-4 pb-4 text-[13px] text-gray-600 leading-relaxed border-t border-gray-50 pt-3">はい、競技種目は問いません。競技の特性や練習量、試合のスケジュールに合わせて考えます。</div>
+        </div>
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-100 faq-item">
+          <button class="w-full flex items-center justify-between p-4 text-left faq-btn" onclick="toggleFaq(this)">
+            <span class="text-[13px] font-bold pr-3">オンラインでも受けられますか？</span>
+            <span class="shrink-0 text-lg faq-icon" style="color:#0BBDCC">＋</span>
+          </button>
+          <div class="faq-answer hidden px-4 pb-4 text-[13px] text-gray-600 leading-relaxed border-t border-gray-50 pt-3">現在は対面のみで実施しています。浦添市仲西のSAILS OKINAWAにお越しください。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 最終CTA -->
+  <section id="line" class="px-5" style="padding-top:1.75rem;padding-bottom:3.5rem;background:linear-gradient(160deg,#0BBDCC 0%,#0899A6 100%)">
+    <div class="max-w-lg mx-auto text-center">
+      <div class="flex justify-center mb-4">
+        <div class="rounded-full bg-white shadow-lg flex items-center justify-center" style="width:108px;height:108px">
+          <img src="{{charaFront}}" alt="" aria-hidden style="display:block;width:96px">
+        </div>
+      </div>
+      <h2 class="text-[22px] font-black leading-tight text-white mb-3">親子で実践につなげる一歩を、<br>ここから。</h2>
+      <p class="text-[13px] text-white/80 leading-relaxed mb-6">わが子に合った食事の<br><strong class="text-white">量・内容・タイミング</strong>を、<br>スポーツ栄養の専門家と一緒に考えます。</p>
+      <div class="bg-white/10 backdrop-blur rounded-2xl p-5 mb-5">
+        <div class="text-white text-[14px] font-black mb-2">スポーツ栄養カウンセリング</div>
+        <div class="text-white/90 text-[13px] font-bold mb-1">小学生・中学生 11,000円 ／ 高校生 16,500円（税込）</div>
+        <div class="text-white/70 text-[12px]">60分・対面 ／ 親子でご参加ください</div>
+      </div>
+      <a href="https://lin.ee/pdK6Hh2o" class="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl text-white font-black text-[15px] shadow-xl mb-3 active:scale-95 transition-transform" style="background:#06C755">
+        <img src="{{lineIcon}}" alt="LINE" style="width:24px;height:24px;display:block" class="shrink-0">
+        公式LINEで日程の相談をする
+      </a>
+      <p class="text-[12px] text-white/70 mb-6">友だち追加後、メニューの<br>「スポーツ栄養カウンセリング」をタップしてください。</p>
+      <div class="hidden sm:flex flex-col items-center gap-2 mt-4 bg-white/10 rounded-2xl p-4 max-w-[200px] mx-auto">
+        <div class="w-24 h-24 bg-white rounded-xl overflow-hidden p-1"><img src="{{lineQr}}" alt="SAILS OKINAWA公式LINE QRコード" class="w-full h-full object-contain"></div>
+        <p class="text-[11px] text-white/70">PCでご覧の方はQRコードからどうぞ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 px-5 bg-white text-center border-t border-gray-100">
+    <img src="{{logo}}" alt="SAILS OKINAWA" class="h-8 w-auto mx-auto" style="opacity:.85">
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const icon = item.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+      answer.classList.toggle('hidden');
+      icon.textContent = isOpen ? '＋' : '−';
+    }
+  </script>
+</body>
+</html>
